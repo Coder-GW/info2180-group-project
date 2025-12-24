@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    padding: 10px;
+
+
+}
+
+.header-title{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.layout{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+
+.sidebar-nav{
+    width: 250px;
+}
+
+.content{
+    flex: 1;
+    padding: 20px;
+    background-color: #F7FAFC;
+}
