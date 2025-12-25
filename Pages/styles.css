@@ -32,7 +32,7 @@ header{
     width: 150px;
 }
 
-.dashboard-header{
+.page-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
