@@ -39,10 +39,30 @@ header{
     margin-bottom: 20px;
 }
 
+.page-header-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.page-title-login{
+    margin: 0;
+}
+
+
 .content{
     flex: 1;
     padding: 20px;
     background-color: #f0f0f0;
+    padding: 30px;
+}
+
+.content-login{
+    flex: 1;
+    padding: 20px;
+    background-color: white;
     padding: 30px;
 }
 
