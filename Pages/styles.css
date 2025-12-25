@@ -5,15 +5,21 @@ body{
 header{
     display: flex;
     align-items: center;
-    background-color: blue;
+    background-color: #1e0161;
     padding: 10px;
+}
 
-
+.logo{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
 
 .header-title{
     font-size: 15px;
     margin-left: 10px;
+    color: white;
+    font-weight: lighter;
 }
 
 .layout{
@@ -26,8 +32,42 @@ header{
     width: 150px;
 }
 
+.dashboard-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .content{
     flex: 1;
     padding: 20px;
-    background-color: #F7FAFC;
+    background-color: #f0f0f0;
+    padding: 30px;
 }
+
+.content-card{
+    background-color: white;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 400px;
+    padding: 20px;
+}
+
+.contacts-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:20px;
+}
+
+.contacts-table thead{
+    border-bottom: 2px solid black;
+
+}
+
+.contacts-table th, .contacts-table td{
+    text-align: left;
+    padding: 8px;
+}
+
