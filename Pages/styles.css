@@ -246,3 +246,87 @@ header {
 .contacts-table td a:hover {
     text-decoration: underline;
 }
+
+/* =========================
+   New Contact Page Styles
+========================= */
+
+/* =========================
+   New Contact Page Styles
+========================= */
+
+/* Two-column form layout */
+.new-contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+    row-gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Form group */
+.new-contact-form-group {
+    display: flex;
+    flex-direction: column; /* forces input BELOW title */
+}
+
+/* Labels (titles) */
+.new-contact-label {
+    font-size: 14px;        /* BIGGER like image */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;    /* space between title & input */
+}
+
+/* Inputs & Selects */
+.new-contact-input {
+    height: 34px;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Placeholder */
+.new-contact-input::placeholder {
+    color: #aaa;
+}
+
+/* Focus state */
+.new-contact-input:focus {
+    outline: none;
+    border-color: #5e72e4;
+}
+
+/* Assigned To full width */
+.new-contact-form-group:last-of-type {
+    grid-column: 1 / -1;
+}
+
+/* Save button container */
+.new-contact-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 14px;
+}
+
+/* Save button */
+.new-contact-actions button {
+    height: 32px;
+    padding: 0 14px;
+    background-color: #5e72e4;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.new-contact-actions button:hover {
+    background-color: #4e5fc4;
+}
