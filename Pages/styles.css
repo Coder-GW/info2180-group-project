@@ -189,6 +189,21 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
+.content-card-details {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 10px;
+}
+
+.contact-main-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+}
+
+
 /* =========================
    Filter Tabs (Dashboard only)
 ========================= */
@@ -244,6 +259,36 @@ header {
 }
 
 .contacts-table td a:hover {
+    text-decoration: underline;
+}
+
+.users-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.users-table th {
+    background-color: #f8f9fb;
+    color: #555;
+    font-weight: 600;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+.users-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+.users-table tbody tr:hover {
+    background-color: #f9fafc;
+}
+.users-table td a {
+    color: #5e72e4;
+    text-decoration: none;
+}
+.users-table td a:hover {
     text-decoration: underline;
 }
 
@@ -326,4 +371,55 @@ header {
 
 .new-contact-actions button:hover {
     background-color: #4e5fc4;
+}
+
+/* =========================
+   Contact Details Page Styles
+========================= */
+
+/* Contact Header Card */
+.contact-header-card {
+    margin-bottom: 20px;
+}
+
+.contact-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-title-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.contact-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.contact-title-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.contact-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="../images/logo.jpg" alt="Dolphin Logo">
+        <h1 class = "header-title">Dolphin CRM</h1>
+    </header>
+
+    <div class="layout">
+        <nav class="sidebar-nav">
+            <div class="menu-item">
+                <img src ="images/home-icon.png" alt="Home Icon" class="menu-icon">
+                <a href="index.html" class="menu-link">Home</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/new-contact.png" alt="New Contact Icon" class="menu-icon">
+                <a href="new-contact.html" class="menu-link">New Contact</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/users-icon.png" alt="Users Icon" class="menu-icon">
+                <a href="users.html" class="menu-link">Users</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/logout-icon.png" alt="Logout Icon" class="menu-icon">
+                <a href="login.html" class="menu-link">Logout</a>
+            </div>
+        </nav>
+
+        <main class="content">
+             <div class="contact-header-card">
+                <div class="contact-header-top">
+                    <div class="contact-title-section">
+                        <img src="images/user-avatar.png" alt="User Avatar" class="contact-avatar">
+                        <div class="contact-title-info">
+                            <h2 class="contact-name" id="contactFullName">Contact Name</h2>
+                            <div class="contact-meta">
+                                <span id="contactCreatedDate">Created on November 9, 2022 by David Wallace</span>
+                            </div>
+                            <div class="contact-meta">
+                                <span id="contactUpdatedDate">Updated on November 13, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-actions"> <!-- change button icons -->
+                        <button class="btn-assign">
+                            <span class="btn-icon">👤</span> Assign to me
+                        </button>
+                        <button class="btn-switch-lead">
+                            <span class="btn-icon">⭐</span> Switch to Sales Lead
+                        </button>
+                    </div>
+                </div>
+            <div class="content-card-details">
+                <div class="contact-main-details">
+                    <div class="contact-detail">
+                        <div class="detail-label">Email</div>
+                        <div class="detail-value">contact@example.com</div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="detail-label">Telephone</div>
+                        <div class="detail-value">+1 (876) 123-4567</div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="detail-label">Company</div>
+                        <div class="detail-value">Fake Company</div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="detail-label">Assigned To:</div>
+                        <div class="detail-value">John Doe</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-card-details">
+                <div class="notes-header">
+                    <img src="images/notes-icon.png" alt="Notes Icon" class="notes-icon">
+                    <h3>Notes</h3>
+                </div>
+    
+                <div class="notes-list" id="notesList">
+                    <!-- Notes will be loaded here dynamically -->
+                </div>
+    
+                <div class="add-note-section">
+                    <div class="add-note-header">Add a note about <span id="contactName"></span></div>
+                    <textarea class="note-textarea" id="noteTextarea" placeholder="Enter details here"></textarea>
+                    <button class="add-note-btn" id="addNoteBtn">Add Note</button>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
