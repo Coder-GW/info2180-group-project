@@ -247,9 +247,6 @@ header {
     text-decoration: underline;
 }
 
-/* =========================
-   New Contact Page Styles
-========================= */
 
 /* =========================
    New Contact Page Styles
@@ -268,15 +265,15 @@ header {
 /* Form group */
 .new-contact-form-group {
     display: flex;
-    flex-direction: column; /* forces input BELOW title */
+    flex-direction: column; 
 }
 
 /* Labels (titles) */
 .new-contact-label {
-    font-size: 14px;        /* BIGGER like image */
+    font-size: 14px;        
     font-weight: 600;
     color: #333;
-    margin-bottom: 6px;    /* space between title & input */
+    margin-bottom: 6px;    
 }
 
 /* Inputs & Selects */
