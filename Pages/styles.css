@@ -1,94 +1,99 @@
-body{
+/* styles.css */
+
+/* General styles */
+body {
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f7f9fc;
 }
 
-header{
+/* Header styles */
+header {
+    background-color: #2c3e50;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    background-color: #1e0161;
-    padding: 10px;
 }
 
-.logo{
+.logo {
     height: 30px;
     width: 30px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
-.header-title{
-    font-size: 15px;
-    margin-left: 10px;
+.header-title {
+    font-size: 18px;
     color: white;
-    font-weight: lighter;
-}
-
-.layout{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: row;
-}
-
-.sidebar-nav{
-    width: 150px;
-}
-
-.page-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.page-header-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.page-title-login{
+    font-weight: 300;
     margin: 0;
 }
 
-
-.content{
-    flex: 1;
+/* Layout */
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
     padding: 20px;
-    background-color: #f0f0f0;
-    padding: 30px;
 }
 
-.content-login{
-    flex: 1;
-    padding: 20px;
-    background-color: white;
-    padding: 30px;
-}
-
-.content-card{
-    background-color: white;
+.content-login {
+    background: white;
+    padding: 40px;
     border-radius: 8px;
-    max-width: 1200px;
-    margin: 0 auto;
-    min-height: 400px;
-    padding: 20px;
-}
-
-.contacts-table{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    border-collapse: collapse;
-    margin-top:20px;
+    max-width: 400px;
 }
 
-.contacts-table thead{
-    border-bottom: 2px solid black;
-
+.page-header-login {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.contacts-table th, .contacts-table td{
-    text-align: left;
-    padding: 8px;
+.page-title-login {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
 }
 
+/* Form styles */
+.login-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.login-form-group input[type="text"],
+.login-form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-form-group input[type="text"]::placeholder,
+.login-form-group input[type="password"]::placeholder {
+    color: #999;
+}
+
+.login-form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5e72e4;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-form-group button:hover {
+    background-color: #4e5fc4;
+}
