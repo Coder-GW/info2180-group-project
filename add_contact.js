@@ -39,6 +39,10 @@ async function loadAssignableUsers() {
             });
             return;
         }
+        if (response.status === 403) {
+            select.innerHTML = '<option disabled>Only admins can assign users</option>';
+            return;
+        }
         console.warn('users.php returned', response.status);
     } catch (err) {
         console.warn('Error fetching users:', err);
@@ -85,6 +89,14 @@ async function checkSession() {
         const response = await fetch("dashboard.php");
         if (!response.ok) {
             window.location.href = "login.html";
+            return;
+        }
+        const data = await response.json();
+        if (data.role !== 'admin') {
+            document.querySelectorAll('.menu-item a[href="users.html"]').forEach(a => {
+                const item = a.closest('.menu-item');
+                if (item) item.style.display = 'none';
+            });
         }
     } catch (error) {
         window.location.href = "login.html";

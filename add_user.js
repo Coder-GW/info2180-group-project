@@ -11,14 +11,20 @@ document.addEventListener("DOMContentLoaded", () => {
 async function checkSession() {
     try {
         const response = await fetch("dashboard.php");
-        const data = await response.json();
         if (!response.ok) {
             window.location.href = "login.html";
             return;
         }
+        const data = await response.json();
         const userName = document.getElementById("userName");
         if (userName) {
             userName.textContent = `${data.firstname} ${data.lastname}`;
+        }
+        if (data.role !== 'admin') {
+            document.querySelectorAll('.menu-item a[href="users.html"]').forEach(a => {
+                const item = a.closest('.menu-item');
+                if (item) item.style.display = 'none';
+            });
         }
     } catch (error) {
         window.location.href = "login.html";

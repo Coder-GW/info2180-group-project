@@ -143,8 +143,22 @@ async function updateContact(id, payload) {
 
 // Re-use checkSession and logout from your dashboard.js logic
 async function checkSession() {
-    const response = await fetch("dashboard.php");
-    if (!response.ok) window.location.href = "login.html";
+    try {
+        const response = await fetch("dashboard.php");
+        if (!response.ok) {
+            window.location.href = "login.html";
+            return;
+        }
+        const data = await response.json();
+        if (data.role !== 'admin') {
+            document.querySelectorAll('.menu-item a[href="users.html"]').forEach(a => {
+                const item = a.closest('.menu-item');
+                if (item) item.style.display = 'none';
+            });
+        }
+    } catch (err) {
+        window.location.href = "login.html";
+    }
 }
 
 async function logout() {
