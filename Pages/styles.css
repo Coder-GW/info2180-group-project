@@ -327,3 +327,210 @@ header {
 .new-contact-form-group:nth-child(2) {
     grid-column: 1 / 2;
 }
+
+
+/* =========================
+   Contact Header Card
+========================= */
+
+
+.contact-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-title-section {
+    display: flex;
+    gap: 12px;
+}
+
+.contact-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.contact-name {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+    color: #222;
+}
+
+.contact-meta {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* =========================
+   Header Action Buttons
+========================= */
+.contact-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-assign,
+.btn-switch-lead {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+/* GREEN button */
+.btn-assign {
+    background-color: #2ecc71;
+    color: #111;
+}
+
+/* YELLOW button */
+.btn-switch-lead {
+    background-color: #f1c40f;
+    color: #111;
+}
+
+/* =========================
+   Contact Info Card
+========================= */
+.content-card-details {
+    background: #fff;
+    padding: 16px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    margin-bottom: 14px;
+}
+
+.contact-main-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 14px;
+}
+
+.contact-title-section {
+    display: flex;
+    align-items: center; /* ← THIS is the key */
+    gap: 10px;
+}
+
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.detail-value {
+    font-size: 14px;
+    color: #222;
+}
+
+/* =========================
+   Notes Section
+========================= */
+.notes-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.notes-icon {
+    width: 14px;
+    height: 14px;
+}
+
+.notes-header h3 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.note-item {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.note-item strong {
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+}
+
+.note-item p {
+    font-size: 13px;
+    color: #444;
+    margin: 4px 0;
+}
+
+.note-date {
+    font-size: 11px;
+    color: #777;
+}
+
+/* =========================
+   Add Note Section
+========================= */
+.add-note-header {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.note-textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+.add-note-btn {
+    background-color: #5e72e4;
+    color: #fff;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-note-btn:hover {
+    background-color: #4e5fc4;
+}
+
+.content-card-details {
+    margin-top: 22px;
+}
+
