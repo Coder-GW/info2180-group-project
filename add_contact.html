@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Contact</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head> 
+<body>
+    <header>
+        <img class="logo" src="images/logo.jpg" alt="Dolphin Logo">
+        <h1 class = "header-title">Dolphin CRM</h1>
+    </header>
+
+    <div class="layout">
+        <nav class="sidebar-nav">
+            <div class="menu-item">
+                <img src ="images/home_icon.png" alt="Home Icon" class="menu-icon">
+                <a href="index.html" class="menu-link">Home</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/new_contact_icon.png" alt="New Contact Icon" class="menu-icon">
+                <a href="new-contact.html" class="menu-link">New Contact</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/users_icon.png" alt="Users Icon" class="menu-icon">
+                <a href="users.html" class="menu-link">Users</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/logout_icon.png" alt="Logout Icon" class="menu-icon">
+                <a href="login.html" class="menu-link">Logout</a>
+            </div>
+        </nav>
+        
+        <main class="content">
+            <div class="page-header">
+                <h2 class="page-title">New Contact</h2>
+            </div>
+            
+        <div class="content-card">
+            <form class="new-contact-form">
+                <div class="new-contact-form-group">
+                    <label for="title" class="new-contact-label">Title</label>
+                    <select id="title" class="new-contact-input">
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                        <option>Ms</option>
+                        <option>Dr</option>
+                    </select>
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="first-name" class="new-contact-label">First Name</label>
+                    <input id="first-name" type="text" class="new-contact-input">
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="last-name" class="new-contact-label">Last Name</label>
+                    <input id="last-name" type="text" class="new-contact-input">
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="email" class="new-contact-label">Email</label>
+                    <input id="email" type="email" placeholder="something@example.com" class="new-contact-input">
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="telephone" class="new-contact-label">Telephone</label>
+                    <input id="telephone" type="tel" class="new-contact-input">
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="company" class="new-contact-label">Company</label>
+                    <input id="company" type="text" class="new-contact-input">
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="type" class="new-contact-label">Type</label>
+                    <select id="type" class="new-contact-input">
+                        <option>Sales Lead</option>
+                        <option>Support</option>
+                    </select>
+                </div>
+                
+                
+                <!-- FULL WIDTH -->
+                 <div class="new-contact-form-group full-width">
+                    <label for="assigned-to" class="new-contact-label">Assigned To</label>
+                    <select id="assigned-to" class="new-contact-input">
+                        <option disabled selected>Loading users...</option>
+                    </select>
+                </div>
+                <!-- SAVE BUTTON -->
+                 <div class="new-contact-actions">
+                    <button type="submit">Save</button>
+                </div>
+            
+            </form>
+        </div>
+    </main>
+    </div>
+    <script src="add_contact.js"></script>
+</body>
+</html>

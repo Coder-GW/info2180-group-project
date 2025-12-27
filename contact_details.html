@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- TOP HEADER -->
+  <header>
+    <img class="logo" src="images/logo.jpg" alt="Dolphin Logo">
+    <h1 class="header-title">Dolphin CRM</h1>
+  </header>
+
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar-nav">
+      <div class="menu-item">
+        <img src="images/home_icon.png" alt="Home Icon" class="menu-icon">
+        <a href="index.html" class="menu-link">Home</a>
+      </div> 
+
+      <div class="menu-item">
+        <img src="images/new_contact_icon.png" alt="New Contact Icon" class="menu-icon">
+        <a href="new-contact.html" class="menu-link">New Contact</a>
+      </div>
+
+      <div class="menu-item">
+        <img src="images/users_icon.png" alt="Users Icon" class="menu-icon">
+        <a href="users.html" class="menu-link">Users</a>
+      </div>
+
+      <div class="menu-item">
+        <img src="images/logout_icon.png" alt="Logout Icon" class="menu-icon">
+        <a href="login.html" class="menu-link">Logout</a>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+      <!-- CONTACT HEADER CARD -->
+      <div class="contact-header-card">
+        <div class="contact-header-top">
+
+          <div class="contact-title-section">
+            <img src="images/user-avatar.png" alt="User Avatar" class="contact-avatar" id="contactAvatar">
+
+            <div class="contact-title-info">
+              <h2 class="contact-name" id="contactFullName"></h2>
+
+              <div class="contact-meta" id="contactCreatedMeta"></div>
+              <div class="contact-meta" id="contactUpdatedMeta"></div>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <button class="btn-assign">
+              ✋ Assign to me
+            </button>
+            <button class="btn-switch-lead">
+              ↔ Switch to Sales Lead
+            </button>
+          </div>
+
+        </div>
+      </div>
+      
+
+      <!-- CONTACT DETAILS CARD -->
+      <div class="content-card-details">
+        <div class="contact-main-details">
+
+          <!-- LEFT COLUMN -->
+          <div class="contact-column">
+            <div class="contact-detail">
+              <div class="detail-label">Email</div>
+              <div class="detail-value" id="contactEmail"></div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="detail-label">Company</div>
+              <div class="detail-value" id="contactCompany"></div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div class="contact-column">
+            <div class="contact-detail">
+              <div class="detail-label">Telephone</div>
+              <div class="detail-value" id="contactTelephone"></div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="detail-label">Assigned To</div>
+              <div class="detail-value" id="contactAssigned"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- NOTES CARD -->
+      <div class="content-card-details">
+
+        <div class="notes-header">
+          <img src="images/notes_icon.png" alt="Notes Icon" class="notes-icon">
+          <h3>Notes</h3>
+        </div> 
+
+        <!-- NOTES LIST -->
+        <div class="notes-list" id="notesList">
+          <p>No notes yet.</p>
+        </div>
+
+        <!-- ADD NOTE -->
+        <div class="add-note-section">
+          <div class="add-note-header">
+            Add a note about <span id="contactName"></span>
+          </div>
+
+          <textarea
+            class="note-textarea"
+            id="noteTextarea"
+            placeholder="Enter details here">
+          </textarea>
+
+          <button class="add-note-btn" id="addNoteBtn">
+            Add Note
+          </button>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+  <script src="contact_details.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.jpg" alt="Dolphin Logo">
+        <h1 class = "header-title">Dolphin CRM</h1>
+    </header>
+
+    <div class="layout">
+        <nav class="sidebar-nav">
+            <div class="menu-item">
+                <img src ="images/home_icon.png" alt="Home Icon" class="menu-icon">
+                <a href="index.html" class="menu-link">Home</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/new_contact_icon.png" alt="New Contact Icon" class="menu-icon">
+                <a href="new-contact.html" class="menu-link">New Contact</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/users_icon.png" alt="Users Icon" class="menu-icon">
+                <a href="users.html" class="menu-link">Users</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/logout_icon.png" alt="Logout Icon" class="menu-icon">
+                <a href="login.html" class="menu-link">Logout</a>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="page-header">
+                <h2 class="page-title">New User</h2>
+            </div>
+            <div class="content-card">
+                <form>
+                    <div class="new-user-form-group">
+                        <label for="first-name" class="new-user-label">First Name</label>
+                        <input type="text" id="first-name" name="first-name" class="new-user-input">
+                        <label for="last-name" class="new-user-label">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" class="new-user-input">
+                        <label for="email" class="new-user-label">Email</label>
+                        <input type="email" placeholder="someone@example.com" id="email" name="email" class="new-user-input">
+                        <label for="password" class="new-user-label">Password</label>
+                        <input type="password" id="password" name="password" class="new-user-input">
+                        <label for="role" class="new-user-label">Role</label>
+                        <select id="role" name="role" class="new-user-input">
+                            <option value="member">Member</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="save-button">Save</button>
+                </form>
+            </div>
+        </main>
+
+    </div>
+    <script src="add_user.js"></script>
+</body>
+</html>
