@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,47 +32,71 @@
                 <a href="login.html" class="menu-link">Logout</a>
             </div>
         </nav>
-
+        
         <main class="content">
             <div class="page-header">
                 <h2 class="page-title">New Contact</h2>
             </div>
-            <div class="content-card">
-                <form>
-                    <div class="new-contact-form-group">
-                        <label for="title" class="new-contact-label">Title</label>
-                        <select id="title" name="title" class="new-contact-input">
-                            <option value="mr">Mr.</option>
-                            <option value="mrs">Mrs.</option>
-                            <option value="ms">Ms.</option>
-                            <option value="dr">Dr.</option>
-                        </select>
-                        <label for="first-name" class="new-contact-label">First Name</label>
-                        <input type="text" id="first-name" name="first-name" class="new-contact-input">
-                        <label for="last-name" class="new-contact-label">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" class="new-contact-input">
-                        <label for="email" class="new-contact-label">Email</label>
-                        <input type="email" placeholder="someone@example.com" id="email" name="email" class="new-contact-input">
-                        <label for="Telephone" class="new-contact-label">Telephone</label>
-                        <input type="tel" id="Telephone" name="Telephone" class="new-contact-input">
-                        <label for="company" class="new-contact-label">Company</label>
-                        <input type="text" id="company" name="company" class="new-contact-input">
-                        <label for="type" class="new-contact-label">Type</label>
-                        <input type="text" id="type" name="type" class="new-contact-input">
-                        <label for="asigned-to" class="new-contact-label">Assigned To</label>
-                         <select id="assigned-to" name="assigned-to" class="new-contact-input">
-                            <option value="User1">User1</option>
-                            <option value="User2">User2</option>
-                            <option value="User3">User3</option>
-                            <option value="User4">User4</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="save-button">Save</button>
-                </form>
-            </div>
-        </main>
-
-    </div>
-
-</body>
-</html>
+            
+        <div class="content-card">
+            <form class="new-contact-form">
+                <div class="new-contact-form-group">
+                    <label for="title" class="new-contact-label">Title</label>
+                    <select id="title" class="new-contact-input">
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                        <option>Ms</option>
+                        <option>Dr</option>
+                    </select>
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="first-name" class="new-contact-label">First Name</label>
+                    <input id="first-name" type="text" class="new-contact-input">
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="last-name" class="new-contact-label">Last Name</label>
+                    <input id="last-name" type="text" class="new-contact-input">
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="email" class="new-contact-label">Email</label>
+                    <input id="email" type="email" placeholder="something@example.com" class="new-contact-input">
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="telephone" class="new-contact-label">Telephone</label>
+                    <input id="telephone" type="tel" class="new-contact-input">
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="company" class="new-contact-label">Company</label>
+                    <input id="company" type="text" class="new-contact-input">
+                </div>
+                
+                <div class="new-contact-form-group">
+                    <label for="type" class="new-contact-label">Type</label>
+                    <select id="type" class="new-contact-input">
+                        <option>Sales Lead</option>
+                        <option>Support</option>
+                    </select>
+                </div>
+                
+                
+                <!-- FULL WIDTH -->
+                 <div class="new-contact-form-group full-width">
+                    <label for="assigned-to" class="new-contact-label">Assigned To</label>
+                    <select id="assigned-to" class="new-contact-input">
+                        <option>Andy Bernard</option>
+                        <option>User 2</option>
+                    </select>
+                </div>
+                <!-- SAVE BUTTON -->
+                 <div class="new-contact-actions">
+                    <button type="submit">Save</button>
+                </div>
+            
+            </form>
+        </div>
+    </main>
