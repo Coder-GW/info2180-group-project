@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New User</title>
-    <link rel="stylesheet" href="styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New User</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <img class="logo" src="../images/logo.jpg" alt="Dolphin Logo">
-        <h1 class = "header-title">Dolphin CRM</h1>
-    </header>
 
-    <div class="layout">
+<body>
+  <header>
+    <img class="logo" src="../images/logo.jpg" alt="Dolphin Logo">
+    <h1 class="header-title">Dolphin CRM</h1>
+  </header>
+
+   <div class="layout">
         <nav class="sidebar-nav">
             <div class="menu-item">
                 <img src ="images/home-icon.png" alt="Home Icon" class="menu-icon">
@@ -33,33 +33,49 @@
             </div>
         </nav>
 
-        <main class="content">
-            <div class="page-header">
-                <h2 class="page-title">New User</h2>
-            </div>
-            <div class="content-card">
-                <form>
-                    <div class="new-user-form-group">
-                        <label for="first-name" class="new-user-label">First Name</label>
-                        <input type="text" id="first-name" name="first-name" class="new-user-input">
-                        <label for="last-name" class="new-user-label">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" class="new-user-input">
-                        <label for="email" class="new-user-label">Email</label>
-                        <input type="email" placeholder="someone@example.com" id="email" name="email" class="new-user-input">
-                        <label for="password" class="new-user-label">Password</label>
-                        <input type="password" id="password" name="password" class="new-user-input">
-                        <label for="role" class="new-user-label">Role</label>
-                        <select id="role" name="role" class="new-user-input">
-                            <option value="member">Member</option>
-                            <option value="admin">Admin</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="save-button">Save</button>
-                </form>
-            </div>
-        </main>
+    <main class="content">
+      <div class="page-header">
+        <h2 class="page-title">New User</h2>
+      </div>
 
-    </div>
+      <div class="content-card">
+        <form class="new-user-form" action="#" method="post">
 
+          <div class="new-user-form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" required>
+          </div>
+
+          <div class="new-user-form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" required>
+          </div>
+
+          <div class="new-user-form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="someone@example.com" required>
+          </div>
+
+          <div class="new-user-form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" minlength="8" required>
+          </div>
+
+          <div class="new-user-form-group full-width">
+            <label for="role">Role</label>
+            <select id="role">
+              <option>Member</option>
+              <option>Admin</option>
+            </select>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="save-button">Save</button>
+          </div>
+
+        </form>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
