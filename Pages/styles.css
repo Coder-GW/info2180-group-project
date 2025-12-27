@@ -189,21 +189,6 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-.content-card-details {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    margin-bottom: 10px;
-}
-
-.contact-main-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 15px;
-}
-
-
 /* =========================
    Filter Tabs (Dashboard only)
 ========================= */
@@ -262,108 +247,68 @@ header {
     text-decoration: underline;
 }
 
-.users-table{
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-}
-
-.users-table th {
-    background-color: #f8f9fb;
-    color: #555;
-    font-weight: 600;
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #e0e0e0;
-}
-.users-table td {
-    padding: 12px;
-    border-bottom: 1px solid #eee;
-    color: #333;
-}
-.users-table tbody tr:hover {
-    background-color: #f9fafc;
-}
-.users-table td a {
-    color: #5e72e4;
-    text-decoration: none;
-}
-.users-table td a:hover {
-    text-decoration: underline;
-}
-
-
 /* =========================
    New Contact Page Styles
 ========================= */
 
-/* Two-column form layout */
 .new-contact-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 28px;
+    column-gap: 30px;
     row-gap: 20px;
     max-width: 900px;
-    margin: 0 auto;
 }
 
-/* Form group */
 .new-contact-form-group {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-/* Labels (titles) */
 .new-contact-label {
-    font-size: 14px;        
+    font-size: 14px;
     font-weight: 600;
     color: #333;
-    margin-bottom: 6px;    
+    margin-bottom: 6px;
 }
 
-/* Inputs & Selects */
 .new-contact-input {
-    height: 34px;
+    height: 36px;
     padding: 6px 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #e1e5eb;
     border-radius: 4px;
     font-size: 14px;
     background-color: #fff;
     box-sizing: border-box;
 }
 
-/* Placeholder */
 .new-contact-input::placeholder {
     color: #aaa;
 }
 
-/* Focus state */
 .new-contact-input:focus {
     outline: none;
     border-color: #5e72e4;
 }
 
-/* Assigned To full width */
-.new-contact-form-group:last-of-type {
+/* Full width row */
+.new-contact-form-group.full-width {
     grid-column: 1 / -1;
 }
 
-/* Save button container */
+/* Save button */
 .new-contact-actions {
     grid-column: 1 / -1;
     display: flex;
     justify-content: flex-end;
-    margin-top: 14px;
+    margin-top: 10px;
 }
 
-/* Save button */
 .new-contact-actions button {
-    height: 32px;
-    padding: 0 14px;
     background-color: #5e72e4;
-    border: none;
-    border-radius: 4px;
     color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
     font-size: 13px;
     font-weight: 500;
     cursor: pointer;
@@ -373,53 +318,12 @@ header {
     background-color: #4e5fc4;
 }
 
-/* =========================
-   Contact Details Page Styles
-========================= */
-
-/* Contact Header Card */
-.contact-header-card {
-    margin-bottom: 20px;
+/* Title stays left, right column empty */
+.new-contact-form-group:first-child {
+    grid-column: 1 / 2;
 }
 
-.contact-header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.contact-title-section {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-}
-
-.contact-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.contact-title-info {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.contact-actions {
-    display: flex;
-    gap: 10px;
-}
-
-.contact-details-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 10px 0;
-}
-
-.contact-detail {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+/* Force First Name to start on next row, left column */
+.new-contact-form-group:nth-child(2) {
+    grid-column: 1 / 2;
 }
