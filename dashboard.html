@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="images/logo.jpg" alt="Dolphin Logo">
+    <h1 class="header-title">Dolphin CRM</h1>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar-nav">
+      <div class="menu-item">
+        <img src="images/home-icon.png" alt="Home Icon" class="menu-icon">
+        <a href="index.html" class="menu-link">Home</a>
+      </div>
+
+      <div class="menu-item">
+        <img src="images/new-contact.png" alt="New Contact Icon" class="menu-icon">
+        <a href="new-contact.html" class="menu-link">New Contact</a>
+      </div>
+
+      <div class="menu-item">
+        <img src="images/users-icon.png" alt="Users Icon" class="menu-icon">
+        <a href="users.html" class="menu-link">Users</a>
+      </div>
+
+      <div class="menu-item">
+        <img src="images/logout-icon.png" alt="Logout Icon" class="menu-icon">
+        <a href="login.html" class="menu-link">Logout</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Page Header -->
+      <div class="dashboard-header">
+        <h2 class="page-title">Dashboard</h2>
+        <button type="button" class="add-contact-btn">+ Add Contact</button>
+      </div>
+
+
+      <!-- Table Card -->
+      <div class="content-card">
+        
+        <div class="filter-tabs">
+            <span class="filter-label">Filter by:</span>
+            <button type="button" class="filter-tab active">All</button>
+            <button type="button" class="filter-tab">Sales Leads</button>
+            <button type="button" class="filter-tab">Support</button>
+            <button type="button" class="filter-tab">Assigned to me</button>
+        </div>
+
+        <table class="dashboard-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Company</th>
+              <th>Type</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Mr. Michael Scott</td>
+              <td>michael.scott@paper.co</td>
+              <td>The Paper Company</td>
+              <td><span class="badge sales">SALES LEAD</span></td>
+              <td><a href="#" class="view-link">View</a></td>
+            </tr>
+
+            <tr>
+              <td>Mr. Dwight Schrute</td>
+              <td>dwight.schrute@paper.co</td>
+              <td>The Paper Company</td>
+              <td><span class="badge support">SUPPORT</span></td>
+              <td><a href="#" class="view-link">View</a></td>
+            </tr>
+
+            <tr>
+              <td>Ms. Pam Beesly</td>
+              <td>pam.beesly@dunder.co</td>
+              <td>Dunder Mifflin</td>
+              <td><span class="badge support">SUPPORT</span></td>
+              <td><a href="#" class="view-link">View</a></td>
+            </tr>
+
+            <tr>
+              <td>Ms. Angela Martin</td>
+              <td>angela.martin@vance.co</td>
+              <td>Vance Refrigeration</td>
+              <td><span class="badge sales">SALES LEAD</span></td>
+              <td><a href="#" class="view-link">View</a></td>
+            </tr>
+
+            <tr>
+              <td>Ms. Kelly Kapoor</td>
+              <td>kelly.kapoor@vance.co</td>
+              <td>Vance Refrigeration</td>
+              <td><span class="badge support">SUPPORT</span></td>
+              <td><a href="#" class="view-link">View</a></td>
+            </tr>
+
+            <tr>
+              <td>Mr. Jim Halpert</td>
+              <td>jim.halpert@dunder.co</td>
+              <td>Dunder Mifflin</td>
+              <td><span class="badge sales">SALES LEAD</span></td>
+              <td><a href="#" class="view-link">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
