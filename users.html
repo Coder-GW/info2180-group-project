@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.jpg" alt="Dolphin Logo">
+        <h1 class = "header-title">Dolphin CRM</h1>
+    </header>
+
+    <div class="layout">
+        <nav class="sidebar-nav">
+            <div class="menu-item">
+                <img src ="images/home_icon.png" alt="Home Icon" class="menu-icon">
+                <a href="index.html" class="menu-link">Home</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/new_contact_icon.png" alt="New Contact Icon" class="menu-icon">
+                <a href="add_contact.html" class="menu-link">New Contact</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/users_icon.png" alt="Users Icon" class="menu-icon">
+                <a href="users.html" class="menu-link">Users</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/logout_icon.png" alt="Logout Icon" class="menu-icon">
+                <a href="login.html" class="menu-link">Logout</a>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="page-header">
+                <h2 class="page-title">Users</h2>
+                <button id="addUserBtn" class="add-user-button" type="button" onclick="window.location.href='add_user.html'">+ Add New User</button>
+            </div>
+            <div class="content-card">
+                    <table class="users-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Created</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersList">
+                            <!-- users from database will be injected here -->
+                        </tbody>
+
+                    </table>
+            </div>
+        </main>
+
+    </div>
+    <script src="users.js"></script>
+</body>
+</html>
