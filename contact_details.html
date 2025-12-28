@@ -11,7 +11,7 @@
 
   <!-- TOP HEADER -->
   <header>
-    <img class="logo" src="images/logo.jpg" alt="Dolphin Logo">
+    <img class="logo" src="../images/logo.jpg" alt="Dolphin Logo">
     <h1 class="header-title">Dolphin CRM</h1>
   </header>
 
@@ -20,22 +20,22 @@
     <!-- SIDEBAR -->
     <nav class="sidebar-nav">
       <div class="menu-item">
-        <img src="images/home_icon.png" alt="Home Icon" class="menu-icon">
+        <img src="images/home-icon.png" alt="Home Icon" class="menu-icon">
         <a href="index.html" class="menu-link">Home</a>
-      </div> 
-
-      <div class="menu-item">
-        <img src="images/new_contact_icon.png" alt="New Contact Icon" class="menu-icon">
-        <a href="add_contact.html" class="menu-link">New Contact</a>
       </div>
 
       <div class="menu-item">
-        <img src="images/users_icon.png" alt="Users Icon" class="menu-icon">
+        <img src="images/new-contact.png" alt="New Contact Icon" class="menu-icon">
+        <a href="new-contact.html" class="menu-link">New Contact</a>
+      </div>
+
+      <div class="menu-item">
+        <img src="images/users-icon.png" alt="Users Icon" class="menu-icon">
         <a href="users.html" class="menu-link">Users</a>
       </div>
 
       <div class="menu-item">
-        <img src="images/logout_icon.png" alt="Logout Icon" class="menu-icon">
+        <img src="images/logout-icon.png" alt="Logout Icon" class="menu-icon">
         <a href="login.html" class="menu-link">Logout</a>
       </div>
     </nav>
@@ -48,13 +48,17 @@
         <div class="contact-header-top">
 
           <div class="contact-title-section">
-            <img src="images/user_avatar.png" alt="User Avatar" class="contact-avatar" id="contactAvatar">
+            <img src="images/user-avatar.png" alt="User Avatar" class="contact-avatar">
 
             <div class="contact-title-info">
-              <h2 class="contact-name" id="contactFullName"></h2>
+              <h2 class="contact-name" id="contactFullName">Mr. Michael Scott</h2>
 
-              <div class="contact-meta" id="contactCreatedMeta"></div>
-              <div class="contact-meta" id="contactUpdatedMeta"></div>
+              <div class="contact-meta">
+                Created on November 9, 2022 by David Wallace
+              </div>
+              <div class="contact-meta">
+                Updated on November 13, 2022
+              </div>
             </div>
           </div>
 
@@ -79,12 +83,12 @@
           <div class="contact-column">
             <div class="contact-detail">
               <div class="detail-label">Email</div>
-              <div class="detail-value" id="contactEmail"></div>
+              <div class="detail-value">michael.scott@paper.co</div>
             </div>
 
             <div class="contact-detail">
               <div class="detail-label">Company</div>
-              <div class="detail-value" id="contactCompany"></div>
+              <div class="detail-value">The Paper Company</div>
             </div>
           </div>
 
@@ -92,12 +96,12 @@
           <div class="contact-column">
             <div class="contact-detail">
               <div class="detail-label">Telephone</div>
-              <div class="detail-value" id="contactTelephone"></div>
+              <div class="detail-value">876-999-9999</div>
             </div>
 
             <div class="contact-detail">
               <div class="detail-label">Assigned To</div>
-              <div class="detail-value" id="contactAssigned"></div>
+              <div class="detail-value">Jen Levinson</div>
             </div>
           </div>
 
@@ -108,19 +112,37 @@
       <div class="content-card-details">
 
         <div class="notes-header">
-          <img src="images/notes_icon.png" alt="Notes Icon" class="notes-icon">
+          <img src="images/notes-icon.png" alt="Notes Icon" class="notes-icon">
           <h3>Notes</h3>
-        </div> 
+        </div>
 
         <!-- NOTES LIST -->
-        <div class="notes-list" id="notesList">
-          <p>No notes yet.</p>
+        <div class="notes-list">
+
+          <div class="note-item">
+            <strong>Jane Doe</strong>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Numquam sapiente officiis suscipit assumenda praesentium.
+            </p>
+            <span class="note-date">November 10, 2022 at 4pm</span>
+          </div>
+
+          <div class="note-item">
+            <strong>John Doe</strong>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Numquam sapiente officiis suscipit assumenda praesentium.
+            </p>
+            <span class="note-date">November 11, 2022 at 10am</span>
+          </div>
+
         </div>
 
         <!-- ADD NOTE -->
         <div class="add-note-section">
           <div class="add-note-header">
-            Add a note about <span id="contactName"></span>
+            Add a note about <span id="contactName">Michael</span>
           </div>
 
           <textarea
@@ -138,6 +160,6 @@
 
     </main>
   </div>
-  <script src="contact_details.js"></script>
+
 </body>
 </html>
