@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="../images/logo.jpg" alt="Dolphin Logo">
+        <h1 class = "header-title">Dolphin CRM</h1>
+    </header>
+
+    <div class="layout">
+        <nav class="sidebar-nav">
+            <div class="menu-item">
+                <img src ="images/home-icon.png" alt="" class="menu-icon">
+                <a href="dashboard.html" class="menu-link">Home</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/new-contact.png" alt="" class="menu-icon">
+                <a href="new-contact.html" class="menu-link">New Contact</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/users-icon.png" alt="" class="menu-icon">
+                <a href="users.html" class="menu-link">Users</a>
+            </div>
+            <div class="menu-item">
+                <img src ="images/logout-icon.png" alt="" class="menu-icon">
+                <a href="login.html" class="menu-link">Logout</a>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="page-header">
+                <h2 class="page-title">Users</h2>
+                <button class="add-user-button">+  Add User</button>
+            </div>
+            <div class="content-card">
+                    <table class="user-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Company</th>
+                                <th>Type</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Person 1 Name</td>
+                                <td>person1@example.com</td>
+                                <td>Company 1</td>
+                                <td>Sales Lead</td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>Person 2 Name</td>
+                                <td>person2@example.com</td>
+                                <td>Company 2</td>
+                                <td>Support</td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>Person 3 Name</td>
+                                <td>person3@example.com</td>
+                                <td>Company 3</td>
+                                <td>Sales Lead</td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>Person 4 Name</td>
+                                <td>person4@example.com</td>
+                                <td>Company 4</td>
+                                <td>Support</td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>Person 5 Name</td>
+                                <td>person5@example.com</td>
+                                <td>Company 5</td>
+                                <td>Sales Lead</td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>Person 6 Name</td>
+                                <td>person6@example.com</td>
+                                <td>Company 6</td>
+                                <td>Support</td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
